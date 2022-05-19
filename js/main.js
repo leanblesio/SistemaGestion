@@ -2,7 +2,7 @@
 const Clientes = []; //array de objetos con clientes
 const Pedidos = []; //array de objetos con pedidos
 const Proveedores = []; //array de objetos con proveedores
-const Productos = []; //array de objetos con productos
+// const Productos = []; //array de objetos con productos
 const Stocks = []; //array de objetos con stocks
 
 
@@ -49,8 +49,6 @@ class CRUD{
 }
 
 
-let crudClientes = new CRUD("CLIENTES"); 
-crudClientes.Create(new Clientes());//INGRESAR FUNCION PARA QUE TOME LOS DATOS
 
 
 
@@ -95,15 +93,15 @@ class Proveedor{
     }
 
 //ENTIDAD PRODUCTO 
-class Producto{
-    constructor(codigo, descripcion, precio, costo, stock){
-        this.codigo = codigo;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.costo = costo;
-        this.Stock = stock;
-    }
-}
+// class Producto{
+//     constructor(codigo, descripcion, precio, costo, stock){
+//         this.codigo = codigo;
+//         this.descripcion = descripcion;
+//         this.precio = precio;
+//         this.costo = costo;
+//         this.Stock = stock;
+//     }
+// }
 
 //ENTIDAD STOCK
 class Stock{
@@ -113,4 +111,5 @@ class Stock{
         this.stockMinimo = stockMinimo
     }
 }
+
 
